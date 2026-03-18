@@ -1,134 +1,171 @@
-Student Grading System
-Project Overview
+# 🎓 Student Grading System
 
-This project is a Python-based Student Grading System that takes student marks as input and returns a grade (A, B, C, D, F) along with encouraging messages.
+## 📌 Project Overview
 
-Objectives:
+This project is a **Python-based Student Grading System** that takes student marks as input and returns a grade (A, B, C, D, F) along with encouraging messages.
 
-Implement grading logic using if-elif-else
-Validate user input (marks between 0–100)
-Use functions for modular coding
-Handle invalid input using while loop
-Provide motivational feedback to students
+---
 
- Setup Instructions
- Requirements:
-Python 3.x installed
+## 🎯 Objectives
 
-How to Run:
+- Implement grading logic using `if-elif-else`
+- Validate user input (marks between 0–100)
+- Use functions for modular coding
+- Handle invalid input using `while` loop
+- Provide motivational feedback to students
 
-Copy the code into a file:
-grading_system.py
-Open terminal / command prompt
-Run the program:
-python grading_system.py
-Enter:
+---
 
-Student name
+## ⚙️ Setup Instructions
 
-Marks (0–100)
+### 🔧 Requirements:
+- Python 3.x installed
 
-Code Structure
+### ▶️ How to Run:
+
+1. Copy the code into a file:
+   ```
+   grading_system.py
+   ```
+
+2. Open terminal / command prompt
+
+3. Run the program:
+   ```bash
+   python grading_system.py
+   ```
+
+4. Enter:
+   - Student name
+   - Marks (0–100)
+
+---
+
+## 🧱 Code Structure
+
+```
 project-folder/
+│
+├── grade_calculator.py   # Main program file
+├── README.md             # Project documentation
+├── test_cases.txt        # Test cases
+└── screenshots/          # Screenshots folder
+    ├── valid_output.png
+    └── invalid_output.png
+```
 
- grading_system.py   # Main program file
- README.md      # Project documentation
- test_cases.txt  # To test the program
- screenshots.png  # Working project SS 
+---
 
-🔹 Key Components:
+## 🔹 Key Components
 
-Function: grade_cal(num) → calculates grade & message
+- **Function:** `grade_cal(num)` → calculates grade & message  
+- **Input System** → takes user input  
+- **Validation Loop** → ensures marks are valid  
+- **Output Section** → displays result  
 
-Input System → takes user input
+---
 
-Validation Loop → ensures marks are valid
+## 🖥️ Visual Documentation
 
-Output Section → displays result
-
-Visual Documentation
-Sample Input:
+### ▶️ Sample Input:
+```
 Enter student name: Anubhav
 Enter marks (0-100): 85
+```
 
- Sample Output:
+### ✅ Sample Output:
+```
 RESULT FOR Anubhav:
 Marks: 85/100
 Grade: B
 Message: Very Good! Keep it up!
- Invalid Input Example:
+```
+
+### ❌ Invalid Input Example:
+```
 Enter marks (0-100): 120
 Invalid marks! Please enter between 0-100.
- Technical Details
- Algorithm:
+```
 
-Take student name input
+---
 
-Use while True loop for marks input
+## 📸 Screenshots
 
-Validate marks range (0–100)
+### ✅ Working Program Output
+<img src="screenshots/valid_output.png" width="700">
 
-Call function grade_cal()
+### ❌ Invalid Input Handling
+<img src="screenshots/invalid_output.png" width="700">
 
-Return grade and message
+---
 
-Display result
+## ⚙️ Technical Details
 
-Data Structures:
+### 🔹 Algorithm:
+1. Take student name input  
+2. Use `while True` loop for marks input  
+3. Validate marks range (0–100)  
+4. Call function `grade_cal()`  
+5. Return grade and message  
+6. Display result  
 
-Basic variables (int, string)
+---
 
-Function returning tuple (grade, message)
+### 🔹 Data Structures:
+- Basic variables (`int`, `string`)
+- Function returning tuple `(grade, message)`
 
-Architecture:
+---
 
-Modular design
+### 🔹 Architecture:
+- Modular design:
+  - Input Layer  
+  - Validation Layer  
+  - Processing Layer (Function)  
+  - Output Layer  
 
-Input Layer
+---
 
-Validation Layer
+## 🧪 Testing Evidence
 
-Processing Layer (Function)
+### ✔ Test Cases:
 
-Output Layer
+| Input Marks | Expected Grade | Result |
+|------------|--------------|--------|
+| 45         | F            | Pass ✅ |
+| 65         | D            | Pass ✅ |
+| 75         | C            | Pass ✅ |
+| 85         | B            | Pass ✅ |
+| 95         | A            | Pass ✅ |
+| -10        | Invalid      | Pass ✅ |
+| 150        | Invalid      | Pass ✅ |
 
-🧪 Testing Evidence
-✔ Test Cases:
-Input Marks	Expected Grade	Result
-45	F	Pass ✅
-65	D	Pass ✅
-75	C	Pass ✅
-85	B	Pass ✅
-95	A	Pass ✅
--10	Invalid	Pass ✅
-150	Invalid	Pass ✅
-🔍 Edge Cases Tested:
+---
 
-Negative numbers 
+### 🔍 Edge Cases Tested:
+- Negative numbers ❌  
+- Marks above 100 ❌  
+- Boundary values (0, 59, 60, 100) ✅  
 
-Marks above 100 
+---
 
-Boundary values (0, 59, 60, 100) ✅
+## 🚀 Features
 
-🚀 Features
+- ✔ Simple and beginner-friendly  
+- ✔ Input validation using loop  
+- ✔ Clean function-based design  
+- ✔ Encouraging messages for students  
 
-✔ Simple and beginner-friendly
+---
 
-✔ Input validation using loop
+## 📈 Future Improvements
 
-✔ Clean function-based design
+- Add multiple student records  
+- Store results in file (CSV/Database)  
+- Add percentage calculation  
 
-✔ Encouraging messages for students
+---
 
-📈 Future Improvements
+## 👨‍💻 Author
 
-Add multiple student records
-
-Store results in file (CSV/Database)
-
-Add percentage calculation
-
-
-👨‍💻 Author
-
-Anubhav Kumar
+**Anubhav Kumar**
