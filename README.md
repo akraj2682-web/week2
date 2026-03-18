@@ -92,10 +92,10 @@ Invalid marks! Please enter between 0-100.
 ## 📸 Screenshots
 
 ### ✅ Working Program Output
-<img src="screenshots/valid_output.png" width="700">
+<img src="screenshot_valid.png" width="700">
 
 ### ❌ Invalid Input Handling
-<img src="screenshots/invalid_output.png" width="700">
+<img src="screenshot_invalid.png" width="700">
 
 ---
 
